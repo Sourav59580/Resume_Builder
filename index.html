@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="bg-light">
+
+    <div class="container p-4 bg-white shadow-sm">
+        <h3 class="text-center font-weight-bold">USER DETAILS</h3>
+        <hr>
+
+        <!-- Start Header section -->
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="font-weight-bold my-4">HEADER</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name </label>
+                        <input type="text" name="name" id="name" class="form-control shadow-sm"
+                            placeholder="Enter your name" required="required">
+                        <span class="my-1 d-block text-danger alert_name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" class="form-control shadow-sm"
+                            placeholder="Enter your email" required="required">
+                            <span class="my-1 d-block text-danger alert_email"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" class="form-control shadow-sm"
+                            placeholder="Enter your phone" required="required">
+                            <span class="my-1 d-block text-danger alert_phone"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="github">Github Profile</label>
+                        <input type="text" name="github" id="github" class="form-control shadow-sm"
+                            placeholder="Enter your github profile">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedin">Linkedin Profile</label>
+                        <input type="text" name="linkedin" id="linkedin" class="form-control shadow-sm"
+                            placeholder="Enter your linkedin profile">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <!-- Start Skills Section -->
+                <h4 class="font-weight-bold my-4 text-uppercase">Additional Skills</h4>
+
+
+            </div>
+        </div>
+
+        <!-- End Header section -->
+
+        <hr>
+
+        <!-- start Education -->
+        <h4 class="font-weight-bold my-4">EDUCATION</h4>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form class="education">
+                    <div class="form-group">
+                        <label for="institution">Institution</label>
+                        <input type="text" name="institution" id="institution" class="form-control shadow-sm"
+                            placeholder="Enter your collage/university name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="degree">Degree</label>
+                        <input type="text" name="degree" id="degree" class="form-control shadow-sm"
+                            placeholder="Enter your degree" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="specialization">Specialization</label>
+                        <input type="text" name="specialization" id="specialization" class="form-control shadow-sm"
+                            placeholder="Enter your specialization" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="startyear">Start Year</label>
+                        <input type="text" name="startyear" id="startyear" class="form-control shadow-sm"
+                            placeholder="Enter your starting year" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="endyear">End Year</label>
+                        <input type="text" name="endtyear" id="endyear" class="form-control shadow-sm"
+                            placeholder="Enter your gradution year">
+                    </div>
+                    <button class="btn btn-warning" type="submit">Add Entry</button>
+                </form>
+            </div>
+            <div class="col-md-6 p-5 educations_container">
+
+                <!-- Showing Data -->
+                <!-- <div class="row">
+                    <div class="col-9">
+                        <h5 class="font-weight-bold">Bachelor of Engineering, <span>CSE</span></h5>
+                        <h5>Chitkara University</h5>
+                        <i><span>2018</span> - <span>Present</span></i>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn text-nowrap btn-success mb-2"><i class="fa fa-edit"></i><a class="ml-2 text-decoration-none">Edit</a></button>
+                        <button class="btn text-nowrap btn-danger"><i class="fa fa-trash"></i><a class="ml-2 text-decoration-none">Delete</a></button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <!-- end Education -->
+        <hr>
+        <!-- Start Project Section-->
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="font-weight-bold mb-4">PROJECT</h4>
+                <form class="project_form">
+                    <div class="form-group">
+                        <label for="title">Titile</label>
+                        <input type="text" name="title" id="title" class="form-control shadow-sm"
+                            placeholder="Enter your project name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description"
+                            placeholder="Enter your project decription" class="form-control shadow-sm">
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" name="skills" id="skills" class="form-control shadow-sm"
+                            placeholder="Enter using skills">
+                    </div>
+
+                    <button class="btn btn-warning" type="submit">Add Entry</button>
+                </form>
+            </div>
+            <div class="col-md-6 p-5 projects_container">
+                
+
+                <!-- <div class="row">
+                    <div class="col-9">
+                        <h5 class="font-weight-bold">DevForDevs</h5>
+                        <p class="mb-0">This project is to connect the people who have the knowledge
+                            to the people who need it, to bring together people with
+                            different perspectives so they can understand each other better, and to empower everyone to share their knowledge.</p>
+                        <p class="mt-1"><span>Technology Stack</span>: <span>: Bootstrap, Angular.js, Node.js, MongoDB</span></p>
+                    </div>
+                    <div class="col-3">
+                        <button class='btn text-nowrap btn-success mb-2'><i class='fa fa-edit'></i><a class='ml-2 text-decoration-none'>Edit</a></button>
+                        <button class='btn text-nowrap btn-danger'><i class='fa fa-trash'></i><a class='ml-2 text-decoration-none'>Delete</a></button>
+                    </div>
+                </div> -->
+                
+                
+            </div>
+        </div>
+
+
+        <!-- End Project Section-->
+
+        <div class="d-flex justify-content-center">
+            <a href="./resume.html" class="btn btn-info">Submit</a>
+        </div>
+
+    </div>
+    
+
+
+    <!-- <p>Hi, I'm</p>
+        <h1 id="f_nam"></h1>
+        <p id="p_num"></p>
+        <p id="e_mail"></p>
+
+        <div class="row">
+            <div class="col-md-6 educations_container"></div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 p-5 projects_container"></div>
+       </div> -->
+        
+        
+    
+
+
+     <script>
+      $(document).ready(function(){
+          var name = localStorage.getItem("name");
+          $("#f_nam").html(name);
+
+          $("#p_num").html(localStorage.getItem("phone"))
+
+          $("#e_mail").html(localStorage.getItem("email"))
+      });
+
+    </script>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

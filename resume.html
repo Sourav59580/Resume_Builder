@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="bg-light p-5">
+
+    <div class="container shadow-sm">
+
+        <div class="row">
+            <div class="col-3 py-4 px-0" style="background-color: #062439;">
+                <div style="width: 100px;height:100px" class="mx-auto mb-4 rounded-circle p-1 bg-light">
+                    <img src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg"
+                        class="rounded-circle w-100">
+                </div>
+                <h4 class="text-center text-uppercase text-light mb-4" id="r_name">Sourav Santra</h4>
+
+                <div class="py-1 px-2" style="background-color: black;">
+                    <h5 class="text-uppercase font-weight-bold mt-2" style="color: #ccc;"><i
+                            class="fa fa-user-circle-o mr-2"></i>CONTACT</h5>
+                </div>
+
+                <div class="d-flex align-items-center px-3 pt-3" style="color: #3E5469;"><i class="fa fa-mobile mr-2"
+                        style="font-size: 23px;"></i><span id="r_phone"></span></div>
+                <div class="d-flex align-items-center px-3 pt-2" style="color: #3E5469;"><i class="fa fa-envelope mr-2"
+                        style="font-size: 15px;"></i><span id="r_email"></span></div>
+                <div class="d-flex align-items-center px-3 pt-2" style="color: #3E5469;"><i class="fa fa-linkedin mr-2"
+                        style="font-size: 15px;"></i><span id="r_linkedin"></span></div>
+                <div class="d-flex align-items-center px-3 pt-2" style="color: #3E5469;"><i class="fa fa-github mr-2"
+                        style="font-size: 15px;"></i><span id="r_github"></span></div>
+
+
+            </div>
+            <div class="col-9 p-0">
+                <div class="card">
+                    <div class="card-body bg-white">
+
+                        <!-- Education -->
+                        <h4 class="font-weight-bolder my-4">EDUCATION</h4>
+
+                        <div class="educations_container"></div>
+                        <!-- <div class="row mb-3">
+                            <div class="col-9">
+                                <h5 class="font-weight-bold">Bachelor of Engineering, <span>CSE</span></h5>
+                                <h5>Chitkara University</h5>
+                                <i><span>2018</span> - <span>Present</span></i>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn education_delete"><i class="fa fa-trash text-danger"></i></button>
+                            </div>
+                        </div> -->
+
+                        <hr>
+
+                        <!-- Project -->
+                        <h4 class="font-weight-bolder my-4">PERSONAL PROJECT</h4>
+                        <div class="projects_container">
+
+                        </div>
+                        
+                        <!-- <div class="row mb-3">
+                            <div class="col-9">
+                                <h5 class="font-weight-bold">DevForDevs</h5>
+                                <p class="mb-0">This project is to connect the people who have the knowledge
+                                    to the people who need it, to bring together people with
+                                    different perspectives so they can understand each other better, and to empower
+                                    everyone to share their knowledge.</p>
+                                <p class="mt-1"><span>Technology Stack</span>: <span>: Bootstrap, Angular.js, Node.js,
+                                        MongoDB</span></p>
+                            </div>
+                            <div class="col-3">
+                               
+                                <button class='btn'><i class='fa fa-trash text-danger'></i></button>
+                            </div>
+                        </div> -->
+
+                        <hr>
+
+                        <!-- SKILLS-->
+
+                        <h4 class="font-weight-bolder my-4">SKILLS</h4>
+
+                        <div class="d-flex">
+                            <div class="badge badge-danger mx-2 rounded">C</div>
+                            <div class="badge badge-danger mx-2 rounded">JAVA</div>
+                            <div class="badge badge-danger mx-2 rounded">HTML5</div>
+                            <div class="badge badge-danger mx-2 rounded">CSS</div>
+                            <div class="badge badge-danger mx-2 rounded">JS</div>
+                        </div>
+                         
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var name = localStorage.getItem("name");
+            $("#r_name").html(name);
+  
+            $("#r_phone").html(localStorage.getItem("phone"));
+  
+            $("#r_email").html(localStorage.getItem("email"));
+
+            $("#r_github").html(localStorage.getItem("github"))
+
+            $("#r_linkedin").html(localStorage.getItem("linkedin"))
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
